@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'Neoris';
-    src: url('Neoris/Neoris\ Bold.ttf');
+    src: url('Neoris/TT\ Neoris\ Trial\ ExtraLight.ttf');
 }
 
 body {
     background-color: #d7d29a;
-
+    font-family: 'Neoris';
 }
 
 .title {
