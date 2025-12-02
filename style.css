@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'ITC';
+    src: url('ITC\ Avant\ Garde\ Gothic/ITC\ Avant\ Garde\ Gothic\ Bold.otf');
+}
+
+@font-face {
+    font-family: 'Neoris';
+    src: url('Neoris/Neoris\ Bold.ttf');
+}
+
+body {
+    background-color: #d7d29a;
+
+}
+
+.title {
+    text-align: center;
+    font-family: 'ITC';
+    font-size: 5rem;
+    font-weight: bold;
+    color: #212121;
+}
