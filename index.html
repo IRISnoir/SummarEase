@@ -15,10 +15,12 @@
                 style="color: #d4d683">SummarEase's got your back!</span>
         </p>
     </div>
-    <textarea id="inputText" placeholder="Enter text here..." rows="10" cols="50"></textarea>
+    <textarea id="inputText" placeholder="Enter your text here, pick a summarization method, and we'll do the rest..."
+        rows="10" cols="50"></textarea>
     <div id="twobuttons">
+        <label for="fileInput"><input type="file" id="fileInput" style="margin-right: 10px;"></label>
         <button id="se">Summarize with SummarEase</button>
-        <button id="gemini">Summarize with Gemini</button>
+        <button id="gemini">Summarize with <span style="color: #ff0037;">Gemini</span></button>
     </div>
     <br>
     <div id="outputText"><span style="opacity: 35%;">Your summary will appear here...</span></div>
