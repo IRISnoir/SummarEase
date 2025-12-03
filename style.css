@@ -45,6 +45,14 @@ textarea,
     color: wheat;
 }
 
+#twobuttons {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 75vw;
+    max-width: 75rem;
+}
+
 button {
     color: white;
     font-family: 'Neoris', sans-serif;
@@ -54,6 +62,7 @@ button {
     margin: 10px;
     font-size: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 #se {
