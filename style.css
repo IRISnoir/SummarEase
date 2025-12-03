@@ -96,16 +96,18 @@ button {
 
 #se {
     border: #1930ff 1px solid;
+    width: 48.25%;
 }
 
 #gemini {
     border: #ff0037 1px solid;
-    background-image: url(logo/gemini.png);
+    background-image: url(logo/gemini-google-icon-symbol-logo-free-png.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
     background-position: 87%;
     background-blend-mode: overlay;
+    width: 48.25%;
 }
 
 #fileInput {
