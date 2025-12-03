@@ -14,3 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }));
     }
 });
+
+// Update percentage when page loads
+document.addEventListener('DOMContentLoaded', function () {
+    const rangeSlider = document.getElementById('summaryLength');
+    const percentageDisplay = document.getElementById('summaryPercentage');
+
+    // Set initial value
+    if (rangeSlider && percentageDisplay) {
+        percentageDisplay.textContent = 'Summarization Ratio: ' + rangeSlider.value + '%';
+
+        // Update percentage when slider is moved
+        rangeSlider.addEventListener('input', function () {
+            percentageDisplay.textContent = 'Summarization Ratio: ' + this.value + '%';
+        });
+    }
+});

@@ -23,12 +23,13 @@
         </p>
     </div>
     <div class="input-container">
-        <textarea id="inputText"
-            placeholder="Enter your text here, pick a summarization method, and we'll do the rest..." rows="10"
+        <textarea id="inputText" placeholder="Enter your text here, and we'll do the rest..." rows="10"
             cols="50"></textarea>
         <label for="fileInput" id="filewrapper"><input type="file" id="fileInput" style="margin-right: 10px;">Upload a
             file</label>
     </div>
+    <div class="summary-percentage" id="summaryPercentage">Summarization Ratio: 30%</div>
+    <input type="range" id="summaryLength" min="1" max="100" value="30">
     <div id="twobuttons">
         <button id="se">Summarize with SummarEase</button>
         <button id="gemini">Summarize with <span style="color: #ff0037;">Gemini</span></button>
