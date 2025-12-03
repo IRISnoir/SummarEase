@@ -9,14 +9,137 @@
 }
 
 body {
-    background-color: #2a2a2a;
-    font-family: 'Neoris';
+    background-image: linear-gradient(to bottom right, #171736, #32141e);
+    font-family: 'Neoris', sans-serif;
+    font-size: 20px;
+    color: #f5deb3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.title {
-    text-align: center;
-    font-family: 'ITC';
-    font-size: 5rem;
-    font-weight: bold;
-    color: #d9e4e5;
+.content {
+    width: 100%;
+    max-width: 600px;
+}
+
+textarea,
+#outputText {
+    resize: none;
+    width: 75vw;
+    max-width: 75rem;
+    height: 10rem;
+    border: 1px solid #d9e4e5;
+    background-color: #08041d;
+    border-radius: 35px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    font-family: 'Neoris', sans-serif;
+    font-size: 20px;
+    color: wheat;
+}
+
+button {
+    color: white;
+    font-family: 'Neoris', sans-serif;
+    background-color: #ff236c00;
+    border-radius: 35px;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#se {
+    border: #1930ff 1px solid;
+}
+
+#gemini {
+    border: #ff0037 1px solid;
+}
+
+#se:hover {
+    animation: seglow 1s ease-out forwards;
+}
+
+@keyframes seglow {
+    0% {
+        background-color: #1930ff00;
+        box-shadow: #1930ff50 0 0px 0;
+    }
+
+    100% {
+        background-color: #1930ff;
+        box-shadow: #1930ff50 0 0px 50px;
+    }
+}
+
+#gemini:hover {
+    animation: geminiglow 1s ease-out forwards;
+}
+
+@keyframes geminiglow {
+    0% {
+        background-color: #ff003700;
+        box-shadow: #ff003750 0 0px 0;
+    }
+
+    100% {
+        background-color: #ff0037;
+        box-shadow: #ff003750 0 0px 50px;
+    }
+}
+
+#inputText:hover {
+    animation: softglow 1s ease-out forwards;
+}
+
+#inputText:focus {
+    outline: none;
+    border-color: #ff0037;
+}
+
+@keyframes softglow {
+    0% {
+        box-shadow: 0 0 0px #ff236c00;
+        border-color: #d9e4e5;
+    }
+
+    100% {
+        box-shadow: 0 0 50px #ff236c50;
+        border-color: #ff236c;
+    }
+}
+
+.logo {
+    max-width: 40vw;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+textarea::-webkit-scrollbar {
+    width: 12px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 20px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #ff0037;
+    border-radius: 20px;
 }

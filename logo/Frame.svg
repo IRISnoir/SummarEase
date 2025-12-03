@@ -1,0 +1,32 @@
+<svg width="132" height="103" viewBox="0 0 132 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_24_2)">
+<mask id="mask0_24_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="132" height="103">
+<path d="M132 0H0V102.915H132V0Z" fill="white"/>
+<path d="M131.5 0.5V102.415H0.5V0.5H131.5Z" stroke="white"/>
+</mask>
+<g mask="url(#mask0_24_2)">
+<path d="M-11.6787 146.87L146.87 -11.6787" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 132.167L146.87 -26.3817" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 29.2453L146.87 -129.303" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 117.464L146.87 -41.0847" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 14.5423L146.87 -144.006" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 102.761L146.87 -55.7882" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 88.0576L146.87 -70.4911" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 73.3547L146.87 -85.1941" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 58.6517L146.87 -99.897" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 43.9487L146.87 -114.6" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 161.573L146.87 3.02423" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 176.276L146.87 17.7272" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 190.979L146.87 32.4307" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 205.682L146.87 47.1336" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 220.385L146.87 61.8366" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 235.088L146.87 76.5396" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+<path d="M-11.6787 249.791L146.87 91.2426" stroke="#F52525" stroke-opacity="0.37" stroke-width="2.23729"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_24_2">
+<rect width="132" height="103" fill="white"/>
+</clipPath>
+</defs>
+</svg>

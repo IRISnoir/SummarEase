@@ -9,10 +9,18 @@
 </head>
 
 <body>
-    <h1 style="z-index: -1; color: #ac6161; position: absolute;" class="title">SummarEase</h1>
-    <h1 style="z-index: -2; color: #76c2c0; position: absolute;" class="title">SummarEase</h1>
-    <h1 class="title">SummarEase</h1>
-    <p>Need help understanding something? Trying to cram for an exam? SummarEase's got your back!</p>
+    <div class="content">
+        <img src="logo/Frame 2.svg" class="logo">
+        <p class="tagline">Need help understanding something? Trying to cram for an exam? <span
+                style="color: #d4d683">SummarEase's got your back!</span>
+        </p>
+    </div>
+    <textarea id="inputText" placeholder="Enter text here..." rows="10" cols="50"></textarea>
+    <div id="twoButtons">
+        <button id="se">Summarize with SummarEase</button>
+        <button id="gemini">Summarize with Gemini</button>
+    </div>
+    <div id="outputText"><span style="opacity: 35%;">Your summary will appear here...</span></div>
     <script src="script.js"></script>
 </body>
 
