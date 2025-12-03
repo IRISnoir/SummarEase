@@ -38,7 +38,7 @@ textarea,
     border-radius: 35px;
     padding: 30px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     text-align: justify;
     font-family: 'Neoris', sans-serif;
     font-size: 20px;
@@ -88,6 +88,34 @@ button {
 
 #fileInput {
     display: none;
+}
+
+#filewrapper {
+    background-color: #08041d;
+    border: #d9e4e5 1px solid;
+    border-radius: 35px;
+    padding: 15px 20px;
+    position: absolute;
+    left: 12vw;
+    margin-top: 190px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#filewrapper:hover {
+    animation: invert 0.5s ease-out forwards;
+}
+
+@keyframes invert {
+    0% {
+        filter: invert(0%);
+        box-shadow: #d9e4e5 0 0px 0;
+    }
+
+    100% {
+        filter: invert(100%);
+        box-shadow: #d9e4e5 0 0px 50px;
+    }
 }
 
 #se:hover {
