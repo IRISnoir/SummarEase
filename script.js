@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (highlightIndex === 0) {
                 // Add opening span tags at the beginning of highlighted text
-                typingElement.innerHTML += '<span class="highlight">Let SummarEase help <span class="bold-you">you</span>!</span>';
+                typingElement.innerHTML += '<span class="highlight">Let SummarEase help <span class="bold-you italic-you">you</span>!</span>';
                 // We'll build the actual text character by character in the highlight container
             }
 
@@ -69,10 +69,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 // "you" part (should be bold)
                 const regularPart = "Let SummarEase help ";
                 const boldPart = "you".substring(0, highlightIndex - regularPart.length + 1);
-                highlightSpan.innerHTML = regularPart + '<span class="bold-you">' + boldPart + '</span>';
+                highlightSpan.innerHTML = regularPart + '<span class="bold-you italic-you">' + boldPart + '</span>';
             } else {
                 // After "you" (the exclamation mark and closing tags)
-                const regularAndBoldPart = "Let SummarEase help <span class=\"bold-you\">you</span>";
+                const regularAndBoldPart = "Let SummarEase help <span class=\"bold-you italic-you\">you</span>";
                 const remainingPart = highlightText.substring(highlightIndex);
                 highlightSpan.innerHTML = regularAndBoldPart + remainingPart;
             }

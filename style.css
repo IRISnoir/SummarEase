@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #111141, #2e0412);
+    background-image: linear-gradient(to bottom right, #03031b, #390013);
     font-family: 'Neoris', sans-serif;
     font-size: 20px;
     color: #f5deb3;
@@ -390,4 +390,8 @@ body {
 
 .bold-you {
     font-weight: bold;
+}
+
+.italic-you {
+    font-style: italic;
 }
