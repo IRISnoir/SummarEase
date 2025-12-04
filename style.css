@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #171736, #32141e);
+    background-image: linear-gradient(to bottom right, #111141, #2e0412);
     font-family: 'Neoris', sans-serif;
     font-size: 20px;
     color: #f5deb3;
@@ -36,13 +36,12 @@ textarea,
     border: 1px solid #d9e4e5;
     background-color: #08041d;
     border-radius: 35px;
-    padding: 30px;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding: 25px;
     text-align: justify;
     font-family: 'Neoris', sans-serif;
     font-size: 20px;
     color: wheat;
+    box-shadow: #08041d 0 0 50px;
 }
 
 #twobuttons {
@@ -51,13 +50,21 @@ textarea,
     text-align: right;
     width: 75vw;
     max-width: 75rem;
+    min-width: 500px;
     flex-wrap: wrap;
 }
 
 #twobuttons button {
-    white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+    #twobuttons {
+        justify-content: center;
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
 }
 
 button {
@@ -96,18 +103,20 @@ button {
 
 #se {
     border: #1930ff 1px solid;
-    width: 48.25%;
+    /* background-image: url(logo/Frame.svg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 0%;
+    background-blend-mode: multiply; */
 }
 
 #gemini {
     border: #ff0037 1px solid;
-    background-image: url(logo/gemini-google-icon-symbol-logo-free-png.webp);
+    background-image: url(logo/gemini.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 20%;
     background-position: 87%;
     background-blend-mode: overlay;
-    width: 48.25%;
 }
 
 #fileInput {
@@ -118,16 +127,44 @@ button {
     background-color: #08041d;
     border: #d9e4e5 1px solid;
     border-radius: 35px;
-    padding: 15px 20px;
+    padding: 10px 15px;
     position: absolute;
     left: 12vw;
-    margin-top: 190px;
-    font-size: 20px;
+    margin-top: 192px;
+    font-size: 15px;
     cursor: pointer;
+}
+
+#languageSelect {
+    border-radius: 35px;
+    background: #08041d;
+    color: #f5deb3;
+    border: #d9e4e5 1px solid;
+    font-family: 'Neoris', sans-serif;
+    position: absolute;
+    font-size: 15px;
+    padding: 10px 15px;
+    right: 12vw;
+    margin-top: -20px;
+    width: 200px;
 }
 
 #filewrapper:hover {
     animation: invert 0.5s ease-out forwards;
+}
+
+#languageSelect:hover {
+    animation: invert2 0.5s ease-out forwards;
+}
+
+@keyframes invert2 {
+    0% {
+        filter: invert(0);
+    }
+
+    100% {
+        filter: invert(1);
+    }
 }
 
 @keyframes invert {
@@ -212,7 +249,7 @@ button {
     0% {
         border: 1px solid #d9e4e5;
         border-radius: 35px;
-        box-shadow: 0 0 0px #ff236c00;
+        box-shadow: 0 0 50px #08041d;
         background: linear-gradient(#08041d, #08041d) padding-box,
             linear-gradient(to top right, #1930ff, #ff0037) border-box;
     }
@@ -228,6 +265,7 @@ button {
 
 .logo {
     max-width: 40vw;
+    min-width: 25rem;
     height: auto;
     margin-top: 30px;
     margin-bottom: -30px;
@@ -318,4 +356,38 @@ body {
     .navbar {
         padding: 1rem;
     }
+}
+
+.cursor {
+    display: inline-block;
+    width: 1px;
+    background-color: #f5deb3;
+    margin-left: 3px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.typing-animation {
+    border-right: 2px solid #f5deb3;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.highlight {
+    color: #d4d683;
+}
+
+.bold-you {
+    font-weight: bold;
 }
