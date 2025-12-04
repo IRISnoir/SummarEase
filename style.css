@@ -133,6 +133,29 @@ button {
     margin-top: 192px;
     font-size: 15px;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#copy {
+    background-color: #08041d;
+    border: #d9e4e5 1px solid;
+    border-radius: 35px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 12vw;
+    margin-top: -20px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    color: #f5deb3
+}
+
+#copy:hover {
+    animation: invert2 0.5s ease-out forwards;
 }
 
 #languageSelect {

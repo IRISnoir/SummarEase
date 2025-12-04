@@ -25,7 +25,9 @@
     <div class="input-container">
         <textarea id="inputText" placeholder="Enter your text here, and we'll do the rest..." rows="10"
             cols="50"></textarea>
-        <label for="fileInput" id="filewrapper"><input type="file" id="fileInput" style="margin-right: 10px;">Upload a
+        <label for="fileInput" id="filewrapper"><input type="file" id="fileInput" style="margin-right: 10px;"><img
+                src="logo/file-60.png" style="margin-left: -5px; padding-right: 5px; height: 20px;" alt="Upload Icon">
+            Upload a
             file</label>
         <select id="languageSelect">
             <option value="en" selected>English</option>
@@ -47,7 +49,12 @@
         <button id="gemini">Summarize with <span style="color: #ff0037;">Gemini</span></button>
     </div>
     <br>
-    <div id="outputText"><span style="opacity: 35%;">Your summary will appear here...</span></div>
+    <div>
+        <button id="copy"><img src="logo/54702.png" style="margin-left: -5px; padding-right: 5px; height: 20px;"
+                alt="Copy Icon"> Copy
+            text</button>
+        <div id="outputText"><span style="opacity: 35%;">Your summary will appear here...</span></div>
+    </div>
     <br>
     <script src="script.js"></script>
 </body>
