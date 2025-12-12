@@ -30,7 +30,8 @@
             Upload a
             file</label>
         <select id="languageSelect">
-            <option value="en" selected>English</option>
+            <option value="auto" selected>Auto-detect language</option>
+            <option value="en">English</option>
             <option value="es">Spanish</option>
             <option value="fr">French</option>
             <option value="de">German</option>
@@ -46,7 +47,8 @@
     <input type="range" id="summaryLength" min="1" max="100" value="30">
     <div id="twobuttons">
         <a href="#outputText"><button id="se">Summarize with SummarEase</button></a>
-        <a href="#outputText"><button id="gemini">Summarize with <span style="color: #ff0037;">Gemini</span></button></a>
+        <a href="#outputText"><button id="gemini">Summarize with <span
+                    style="color: #ff0037;">Gemini</span></button></a>
     </div>
     <br>
     <div>
